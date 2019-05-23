@@ -20,8 +20,8 @@ base_damage: base damage of the weapon (my rapier and longbow both do 1d8 base d
     avg_reg_damage = reg_to_hit * reg_damage
     avg_adv_damage = adv_to_hit * reg_damage
     
-    avg_2_attacks_1_adv = reg_to_hit*avg_adv_damage*2*reg_damage
-    avg_2_attacks_2_adv = avg_adv_damage**2 * 2 * reg_damage
+    avg_2_attacks_1_adv = reg_to_hit*adv_to_hit * 2 * reg_damage
+    avg_2_attacks_2_adv = adv_to_hit **2 * 2 * reg_damage
 
     avg_longbow_extra_damage = longbow_extra_to_hit * extra_longbow_damage
     avg_longbow_extra_damage_adv = longbow_extra_to_hit_adv * extra_longbow_damage
