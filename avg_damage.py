@@ -1,4 +1,10 @@
 def avg_damage(ac, n_d6, prof, mod, base_damage):
+    '''ac: Armor Class
+n_d6: number of d6 dice for rogue's sneak attack
+prof: proficiency bonus, starts with +2 and gets larger as levels go up
+mod: dexerity modifier (+3 in my case)
+base_damage: base damage of the weapon (my rapier and longbow both do 1d8 base damage so 8 for me)
+    '''
     ac *= 1.0
     prof *= 1.0
     mod *= 1.0
